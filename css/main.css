@@ -62,12 +62,27 @@ h2 {
   font-weight: 400;
 }
 
+#copied {
+  font-size: .8rem;
+  color: #FF3355;
+  font-weight: 400;
+  /*position: absolute;*/
+  background: #FFF3F5;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 5px;
+  z-index: 999;
+  margin-top:30px;
+  opacity: 0;
+  transition: all .25s ease-in;
+}
 a:link, a:visited {
   color: #FF3355;
   text-decoration: none;
   padding-bottom: 8px;
   border-bottom: 2px solid #fff;
   transition: all .15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  outline: none;
 }
 
 a:hover {

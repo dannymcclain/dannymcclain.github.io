@@ -7,7 +7,10 @@
 	<meta name="description" content="Danny McClain is a designer with an affinity for the web, user interfaces, typography, and using systems to make design scale.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet" media="all">
+
+	<link href="css/main.css" rel="stylesheet" media="all">
+
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
 </head>
 <body>
 <div class="container cf">
@@ -15,14 +18,17 @@
 		<header>
 			<h1>Danny McClain</h1>
 			<h2 class="sub">Designer</h2>
-			<a href="mailto:dannyxmcclain@gmail.com">dannyxmcclain@gmail.com</a>
+			<div id="copied">Address Copied to Clipboard</div>
+			<a href="#" class="email" data-clipboard-text="dannyxmcclain@gmail.com">dannyxmcclain@gmail.com</a>
+			<!-- <a href="https://www.linkedin.com/in/dannymcclain/">LinkedIn</a></br>
+			<a href="https://github.com/dannymcclain">Github</a> -->
 		</header>
 	</div><!-- end sidebar -->
 	<div class="main-content">
 		<p class="greeting">Greetings! I'm a designer with an affinity for the web, user interfaces, typography, and using systems to make design scale.</p>
 
 		<h2 class="sub">Current</h2>
-		<p>Content here...</p>
+		<p>I'm currently looking for new opportunities to apply my skills, grow my knowledge of web technologies, and hone my craft as a designer. If you think we may be a good fit, send me an email.</p>
 
 		<h2 class="sub">Previous</h2>
 		<p>Content here...</p>
@@ -37,4 +43,14 @@
 	<footer>
 	</footer>
 </div>
+<script>
+	var clipboard = new Clipboard('.email');
+	var copied = document.getElementById("copied");
+
+	clipboard.on('success', function(e) {
+		copied.style.opacity = "1";
+		setTimeout(function(){ copied.style.opacity = "0"; },2000)
+    e.clearSelection();
+});
+</script>
 </body>
