@@ -7,14 +7,7 @@
 	<meta name="description" content="Danny McClain is a designer with an affinity for the web, user interfaces, typography, and using systems to make design scale.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-
   <link href="css/main.css" rel="stylesheet" media="all">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-	<script src="tether.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container cf">
@@ -22,15 +15,7 @@
 		<header>
 			<h1>Danny McClain</h1>
 			<h2 class="sub">Designer</h2>
-			<a href="#" class="email" data-clipboard-action="copy" data-clipboard-text="dannyxmcclain@gmail.com" data-toggle="tooltip" title="Address Copied">dannyxmcclain@gmail.com</a>
-			<!-- Generated markup by the plugin -->
-			<div class="tooltip tooltip-bottom" role="tooltip">
-			  <div class="tooltip-arrow"></div>
-			  <div class="tooltip-inner">
-			    Some tooltip text!
-			  </div>
-			</div>
-
+			<a href="mailto:dannyxmcclain@gmail.com">dannyxmcclain@gmail.com</a>
 		</header>
 	</div><!-- end sidebar -->
 	<div class="main-content">
@@ -52,25 +37,4 @@
 	<footer>
 	</footer>
 </div>
-<script>
-	// new Clipboard('.email');
-	$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-// $('#example').tooltip(options)
-
-	var clipboard = new Clipboard('.email');
-
-	clipboard.on('success', function(e) {
-    console.info('Action:', e.action);
-    console.info('Text:', e.text);
-    console.info('Trigger:', e.trigger);
-
-
-
-    e.clearSelection();
-});
-
-</script>
 </body>
