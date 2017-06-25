@@ -39,8 +39,12 @@ body {
 
 .main-content {
   width: 64%;
-  margin: 0;
+  margin: 0 0 100px 0;
   float: left;
+}
+
+header {
+  padding-top: 30px;
 }
 
 h1 {
@@ -54,6 +58,12 @@ h2 {
   color:#999;
   font-size: inherit;
   line-height: inherit;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: inherit;
 }
 
 .greeting {
@@ -64,16 +74,16 @@ h2 {
 
 #copied {
   font-size: .8rem;
-  color: #57C234;
+  color: #FF3355;
   font-weight: 400;
-  background: #EDFEE7;
+  background: #FFF0F3;
   display: inline-block;
   padding: 2px 8px;
   border-radius: 5px;
   z-index: 999;
-  margin-top:30px;
   opacity: 0;
   transition: all .2s ease-in;
+  top: -45px;
 }
 
 a:link, a:visited {
@@ -92,10 +102,9 @@ a:hover {
 a:active {
   border-bottom: 2px solid #FF3355;
 }
- p {
-   margin-bottom: 24px;
- }
 
- h2 {
-   margin-bottom: 12px;
- }
+p {
+   margin-bottom: 24px;
+}
+
+/*780*/
