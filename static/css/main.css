@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  font-weight: 400;
+}
+
+.container {
+  width: 80%;
+  max-width: 820px;
+  margin: 60px auto;
+}
+
+.cf:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+header {
+  width: 80%;
+  max-width: 820px;
+  margin: 60px auto 0;
+}
+
+header h1 {
+  margin-bottom: 24px;
+}
+
+.navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  margin-bottom: 12px;
+}
+
+.navlinks li:last-child {
+  margin-bottom: 0;
+}
+
+.navlinks li.btn a {
+  font-size: 13px;
+  background-color: rgba(255, 51, 85, 0.05);
+  padding: 3px 6px!important;
+  border-radius: 4px;
+  border: 1px solid #FF3355!important;
+}
+.navlinks li.btn a:hover {
+  color: #fff;
+  background-color: rgba(255, 51, 85, 1.0);
+  padding: 0 4px;
+  border-radius: 4px;
+  border: 1px solid #FF3355;
+}
+
+.navlinks li.btn a:active {
+  color: #fff;
+  background-color: rgba(230, 23, 57, 1.0);
+  border: 1px solid #E61739;
+}
+
+.sidebar {
+  width: 100%;
+  margin: 0 0 48px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.main-content {
+  width: 100%;
+  margin: 0 0 100px 0;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+.wrap {
+  background-color: #F7F7F7;
+  padding: 48px 0;
+}
+
+.wrap > .container {
+  margin: 0 auto!important;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 4%;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.greetings {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.callout {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+  color:#999;
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: inherit;
+}
+
+.greeting {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.navlinks li a:link, .navlinks li a:visited {
+  color: #FF3355;
+  text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fff;
+  transition: all .15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  outline: none;
+}
+
+.navlinks li.active a:link, .navlinks li.active a:visited {
+  color: #333;
+  text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: none;
+  transition: all .15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  outline: none;
+}
+
+.navlinks li a:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #FFCCD5;
+}
+.navlinks li a:active {
+  border-bottom: 2px solid #FF3355;
+}
+
+.navlinks li.active a:hover {
+  border-bottom: none;
+}
+.navlinks li.active a:active {
+  border-bottom: none;
+}
+
+a:link, a:visited {
+  color: #FF3355;
+  text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fff;
+  transition: all .15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  outline: none;
+}
+a:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #FFCCD5;
+}
+a:active {
+  border-bottom: 2px solid #FF3355;
+}
+
+p {
+   margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 480px) {
+  header h1 {
+    float:left;
+  }
+
+  .navlinks {
+    list-style: none;
+    float: right;
+  }
+
+  .navlinks li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  .navlinks li:last-child {
+    margin-right: 0;
+  }
+
+  .greetings {
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 400;
+    margin-bottom:120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 100px auto 36px;
+  }
+
+  .sidebar {
+    width: 32%;
+    margin: 0 4% 0 0;
+    float: left;
+  }
+
+  .main-content {
+    width: 64%;
+    margin: 0 0 100px 0;
+    float: left;
+  }
+}
+
+.b-lazy {
+    -webkit-transition: opacity 300ms ease-in-out;
+       -moz-transition: opacity 300ms ease-in-out;
+         -o-transition: opacity 300ms ease-in-out;
+            transition: opacity 300ms ease-in-out;
+             max-width: 100%;
+               opacity: 0;
+}
+.b-lazy.b-loaded {
+               opacity: 1;
+}
