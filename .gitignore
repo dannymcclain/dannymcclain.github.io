@@ -1,2 +1,3 @@
 # Ignore working design folder #
 /design/*
+.DS_Store
