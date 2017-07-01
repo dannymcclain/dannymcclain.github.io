@@ -7,6 +7,8 @@
         <meta name="description" content="Danny McClain is a designer with an affinity for the web, user interfaces, typography, and using systems to make design scale.">
       	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="canonical" href="/error/" />
+
         <link rel="icon" type="image/png" href="/static/images/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="/static/images/favicon-32x32.png" sizes="32x32">
 
@@ -21,8 +23,8 @@
       <header class="cf">
           <h1>Danny McClain</h1>
           <ul class="navlinks">
-            <li class=""><a href="/index.html">Work</a></li>
-            <li class=""><a href="/about.html">About</a></li>
+            <li class=""><a href="/">Work</a></li>
+            <li class=""><a href="/about/">About</a></li>
             <li class="email btn"><a href="mailto:dannyxmcclain@gmail.com">Email Me</a></li>
           </ul>
       </header>
@@ -30,8 +32,8 @@
     
 <div class="jumbotron">
   <div class="container">
-    <h1>Make this a contact form!</h1>
-    <p>Give your contact info, or use a SaaS solution to add dynamic contact forms to your static website.</p>
+    <h1>We're sorry!</h1>
+    <p>The page <b id="url"></b> could not be found on this server.</p>
   </div>
 </div>
 
@@ -40,5 +42,18 @@
   </body>
 
   
-  
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+
+      // Add the missing url to the text
+      $("#url").text(window.location.pathname);
+
+      // Fix the css locations dynamically
+      $("head link").each(function() {
+        for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
+          $(this).attr("href", "../" + $(this).attr("href"));
+      });
+    })
+  </script>
+
 </html>
