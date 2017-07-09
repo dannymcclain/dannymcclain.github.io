@@ -160,7 +160,7 @@ h3 {
 }
 
 .navlinks li.active a:link, .navlinks li.active a:visited {
-  color: #333;
+  color: #999;
   text-decoration: none;
   padding-bottom: 8px;
   border-bottom: none;
