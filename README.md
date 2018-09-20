@@ -1,3 +1,3 @@
-# 💻 Personal Website
+# Personal Website
 
-My personal (temporary) website.
+💻 My (temporary) personal website.
