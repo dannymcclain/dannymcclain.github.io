@@ -5,7 +5,7 @@ import './App.css';
 
 const App = () => (
   <div className="container">
-    <h1>Danny McClain</h1>
+    <h2>Danny McClain</h1>
     <p>
       I’m a digital product designer crafting apps and interfaces. Currently
       having lots of fun learning React.
