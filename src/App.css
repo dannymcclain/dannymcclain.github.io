@@ -93,7 +93,7 @@ h1 {
 
 @media (max-width: 540px) {
   .container {
-    margin: 40px 60px;
+    margin: 60px 40px;
   }
 
   .links {
@@ -102,6 +102,10 @@ h1 {
   }
 
   .links a {
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .links a svg {
+    margin-right: 10px;
   }
 }
