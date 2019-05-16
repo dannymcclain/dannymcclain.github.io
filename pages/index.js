@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Emoji from 'a11y-react-emoji';
 import '../styles/styles.scss';
 
 export default () => (
@@ -28,15 +29,20 @@ export default () => (
         rel="stylesheet"
       />
     </Head>
+    <div className="border" />
     <header>
-      <h1>Danny McClain</h1>
+      <h1>
+        Danny McClain <Emoji symbol="🤙" />
+      </h1>
       <p>
         Digital product designer who likes to build stuff too. Always learning
         because learning is fun!
       </p>
     </header>
     <section className="about">
-      <h2>About</h2>
+      <h2>
+        About <Emoji symbol="📓" />
+      </h2>
       <p>
         I design apps and interfaces that work well, look nice, and feel good.
       </p>
@@ -46,7 +52,9 @@ export default () => (
       </p>
     </section>
     <section className="projects">
-      <h2>Misc. Projects</h2>
+      <h2>
+        Misc. Projects <Emoji symbol="🚀" />
+      </h2>
       <ul>
         <li>
           <a href="" target="_blank">
@@ -76,28 +84,32 @@ export default () => (
       </ul>
       <p>
         View more of my work on{' '}
-        <a href="" target="_blank">
+        <a href="https://dribbble.com/dannymcclain" target="_blank">
           Dribbble
         </a>
         .
       </p>
     </section>
     <section className="currently">
-      <h2>Currently</h2>
+      <h2>
+        Currently <Emoji symbol="⌚️" />
+      </h2>
       <p>
         I’m currently designing digital experiences that help people get a smile
         they’re proud of at{' '}
-        <a href="" target="_blank">
+        <a href="https://smiledirectclub.com" target="_blank">
           SmileDirectClub
         </a>
         .
       </p>
     </section>
     <section className="links">
-      <h2>Links</h2>
+      <h2>
+        Links <Emoji symbol="🔗" />
+      </h2>
       <ul>
         <li>
-          <a href="" target="_blank">
+          <a href="https://dribbble.com/dannymcclain" target="_blank">
             Dribbble
           </a>
         </li>

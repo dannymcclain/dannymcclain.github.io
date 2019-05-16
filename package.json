@@ -1,7 +1,7 @@
 {
   "name": "dannymcclain.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal site of digital product designer Danny McClain",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,6 +24,7 @@
   "homepage": "https://dannymcclain.com",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "a11y-react-emoji": "^1.0.0",
     "next": "^8.1.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",

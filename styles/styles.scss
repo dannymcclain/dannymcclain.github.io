@@ -7,8 +7,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+// DARK
+// $text: #fff;
+// $background: #000;
 
-$text-color: #242a31;
+// LIGHT
+$text: #242a31;
+$background: #fff;
+
 $accent: #ff6666;
 
 #__next,
@@ -23,13 +29,27 @@ $accent: #ff6666;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 80px;
+  padding-bottom: 100px;
+}
+.border {
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(
+    90deg,
+    #ff6666 0%,
+    #bd69f6 20%,
+    #5176ff 41%,
+    #44d8bb 60%,
+    #ffd00f 80%,
+    #fc88cd 100%
+  );
 }
 
 body {
   font-family: 'Overpass Mono', monospace;
   font-weight: 400;
-  color: $text-color;
+  background: $background;
+  color: $text;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0;
@@ -37,7 +57,7 @@ body {
 
 header,
 section {
-  margin-bottom: 80px;
+  margin: 80px 80px 0;
   max-width: 400px;
 }
 
@@ -46,7 +66,7 @@ h2 {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
-  color: $text-color;
+  color: $text;
   text-transform: uppercase;
 }
 ul {
@@ -63,19 +83,29 @@ ul {
 p {
   margin-top: 20px;
 }
+
 a {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0;
-  color: $text-color;
+  color: $text;
   text-decoration: none;
-  border-bottom: 1px dotted $text-color;
+  border-bottom: 1px dotted $text;
 
   &:hover {
-    border-bottom: 1px solid $text-color;
+    border-bottom: 1px solid $text;
+    text-transform: uppercase;
   }
   &:active {
-    border-bottom: 1px solid $text-color;
+    border-bottom: 1px solid $accent;
+    color: $accent;
+  }
+}
+
+@media (max-width: 560px) {
+  header,
+  section {
+    margin: 40px 40px 0;
   }
 }
