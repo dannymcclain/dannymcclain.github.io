@@ -2,13 +2,9 @@
   "name": "dannymcclain.github.io",
   "version": "1.0.0",
   "description": "Personal site of digital product designer Danny McClain",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,13 +16,5 @@
   "bugs": {
     "url": "https://github.com/dannymcclain/dannymcclain.github.io/issues"
   },
-  "homepage": "https://dannymcclain.com",
-  "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "a11y-react-emoji": "^1.0.0",
-    "next": "^8.1.0",
-    "node-sass": "^4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+  "homepage": "https://dannymcclain.com"
 }
