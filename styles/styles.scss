@@ -43,6 +43,8 @@ $accent: #ff6666;
     #ffd00f 80%,
     #fc88cd 100%
   );
+  position: fixed;
+  margin-bottom: 5px;
 }
 
 body {
@@ -91,7 +93,7 @@ a {
   letter-spacing: 0;
   color: $text;
   text-decoration: none;
-  border-bottom: 1px dotted $text;
+  border-bottom: 1px solid #44d8bb;
 
   &:hover {
     border-bottom: 1px solid $text;
