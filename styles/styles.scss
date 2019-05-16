@@ -7,6 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+// DARK
+// $text: #fff;
+// $background: #000;
+
+// LIGHT
+$text: #242a31;
+$background: #fff;
+
+$accent: #ff6666;
 
 #__next,
 .app {
@@ -41,8 +50,8 @@
 body {
   font-family: 'Overpass Mono', monospace;
   font-weight: 400;
-  background: #fff;
-  color: #242a31;
+  background: $background;
+  color: $text;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0;
@@ -59,18 +68,18 @@ h2 {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #242a31;
+  color: $text;
   text-transform: uppercase;
 }
 ul {
   list-style: none;
   margin-top: 20px;
-}
-li {
-  margin-bottom: 4px;
-}
-li:last-child {
-  margin-bottom: 0;
+  li {
+    margin-bottom: 4px;
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
 }
 
 p {
@@ -82,18 +91,19 @@ a {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0;
-  color: #242a31;
+  color: $text;
   text-decoration: none;
-  border-bottom: 1px dotted #242a31;
+  border-bottom: 1px dotted $text;
   background: transparent;
-}
-a:hover {
-  border-bottom: 1px solid #242a31;
-  font-weight: 700;
-}
-a:active {
-  border-bottom: 1px solid #ff6666;
-  color: #ff6666;
+
+  &:hover {
+    border-bottom: 1px solid $text;
+    font-weight: 700;
+  }
+  &:active {
+    border-bottom: 1px solid $accent;
+    color: $accent;
+  }
 }
 
 @media (max-width: 560px) {
