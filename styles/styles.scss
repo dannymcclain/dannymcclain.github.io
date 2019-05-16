@@ -94,6 +94,7 @@ a {
   color: $text;
   text-decoration: none;
   border-bottom: 1px dotted $text;
+  background: transparent;
 
   &:hover {
     border-bottom: 1px solid $text;
