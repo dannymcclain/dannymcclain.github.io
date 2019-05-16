@@ -1,0 +1,32 @@
+{
+  "name": "dannymcclain.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export -o docs",
+    "deploy": "next build && next export -o docs && git checkout -- docs/CNAME && git checkout -- docs/.nojekyll && git add docs && git commit -m \"chore: regen site\" && git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannymcclain/dannymcclain.github.io.git"
+  },
+  "keywords": [],
+  "author": "@dannymcclain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannymcclain/dannymcclain.github.io/issues"
+  },
+  "homepage": "https://dannymcclain.com",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^8.1.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
