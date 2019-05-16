@@ -13,7 +13,7 @@ const App = () => (
       having lots of fun learning React.
     </p>
 
-    <div className="links">
+    <ul className="links">
       <Link
         url="https://github.com/dannymcclain"
         icon={<Code size={20} />}
@@ -34,7 +34,7 @@ const App = () => (
         icon={<Mail size={20} />}
         title="Email"
       />
-    </div>
+    </ul>
   </div>
 );
 
