@@ -21,7 +21,8 @@ $text-color: #242a31;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  padding: 80px;
 }
 
 body {
@@ -31,4 +32,32 @@ body {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: $text-color;
+  text-transform: uppercase;
+}
+ul {
+  list-style: none;
+}
+p {
+  margin-top: 20px;
+}
+a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: $text-color;
+  text-decoration: underline;
+}
+
+header,
+section {
+  margin-bottom: 80px;
 }
