@@ -9,6 +9,7 @@
 }
 
 $text-color: #242a31;
+$accent: #ff6666;
 
 #__next,
 .app {
@@ -34,6 +35,12 @@ body {
   letter-spacing: 0;
 }
 
+header,
+section {
+  margin-bottom: 80px;
+  max-width: 400px;
+}
+
 h1,
 h2 {
   font-weight: 700;
@@ -44,7 +51,15 @@ h2 {
 }
 ul {
   list-style: none;
+  margin-top: 20px;
+  li {
+    margin-bottom: 4px;
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
 }
+
 p {
   margin-top: 20px;
 }
@@ -54,10 +69,13 @@ a {
   line-height: 30px;
   letter-spacing: 0;
   color: $text-color;
-  text-decoration: underline;
-}
+  text-decoration: none;
+  border-bottom: 1px dotted $text-color;
 
-header,
-section {
-  margin-bottom: 80px;
+  &:hover {
+    border-bottom: 1px solid $text-color;
+  }
+  &:active {
+    border-bottom: 1px solid $text-color;
+  }
 }
