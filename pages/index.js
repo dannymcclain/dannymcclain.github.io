@@ -57,27 +57,27 @@ export default () => (
       </h2>
       <ul>
         <li>
-          <a href="" target="_blank">
+          <a href="https://fittoparent.dannymcclain.com" target="_blank">
             Fit to Parent
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://swap-width-height.dannymcclain.com" target="_blank">
             Swap Width &amp; Height
           </a>
         </li>
-        <li>
+        {/* COMING SOON <li>
           <a href="" target="_blank">
             DoodleFrame UI Kit
           </a>
-        </li>
+        </li> */}
         <li>
-          <a href="" target="_blank">
+          <a href="https://pensive-joliot-ed3c84.netlify.com" target="_blank">
             Ratio
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://frosty-hypatia-1693bf.netlify.com" target="_blank">
             Grid Calc
           </a>
         </li>
@@ -114,17 +114,17 @@ export default () => (
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://github.com/dannymcclain" target="_blank">
             GitHub
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://twitter.com/dannymcclain" target="_blank">
             Twitter
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="mailto:dannyxmcclain@gmail.com" target="_blank">
             Email
           </a>
         </li>

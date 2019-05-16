@@ -93,11 +93,11 @@ a {
   letter-spacing: 0;
   color: $text;
   text-decoration: none;
-  border-bottom: 1px solid #44d8bb;
+  border-bottom: 1px dotted $text;
 
   &:hover {
     border-bottom: 1px solid $text;
-    text-transform: uppercase;
+    font-weight: 700;
   }
   &:active {
     border-bottom: 1px solid $accent;
