@@ -28,6 +28,25 @@ export default () => (
         rel="stylesheet"
       />
     </Head>
-    Hello world!
+    <header>
+      <h1>Danny McClain</h1>
+      <p />
+    </header>
+    <section className="about">
+      <h2>About</h2>
+      <p />
+      <p />
+    </section>
+    <section className="projects">
+      <h2>Misc. Projects</h2>
+    </section>
+    <section className="currently">
+      <h2>Currently</h2>
+      <p />
+    </section>
+    <section className="links">
+      <h2>Links</h2>
+      <ul />
+    </section>
   </div>
 );
